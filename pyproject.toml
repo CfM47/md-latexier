@@ -1,7 +1,18 @@
 [project]
 name = "md-latexier"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple markdown-to-LaTeX converter with templates."
+requires-python = ">=3.9"
+authors = [
+    { name = "Jossue Arteche" },
+]
+
 readme = "README.md"
-requires-python = ">=3.13"
+
 dependencies = []
+
+[project.scripts]
+md-latexier = "md_latexier.main:main"
+
+[tool.uv]
+package = true

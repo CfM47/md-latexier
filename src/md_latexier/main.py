@@ -1,12 +1,11 @@
 import sys
 import os
-
-from src.converter import md_to_latex
+from md_latexier.converter import md_to_latex
 from templates.default import LATEX_TEMPLATE
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: uv run main.py archivo.md")
+        print("Uso: md-latexier archivo.md")
         sys.exit(1)
 
     md_path = sys.argv[1]
@@ -20,7 +19,6 @@ def main():
 
     title, latex_content = md_to_latex(md_text)
 
-    # Insertar contenido en la plantilla
     final_tex = LATEX_TEMPLATE.replace("TITLE_PLACEHOLDER", title)
     final_tex = final_tex.replace("CONTENT_PLACEHOLDER", latex_content)
 
@@ -32,6 +30,5 @@ def main():
     print("Convertido correctamente:")
     print(" →", tex_path)
 
-
-if __name__ == "__main__":
+if __name__ == "main":
     main()

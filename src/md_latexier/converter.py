@@ -1,11 +1,11 @@
-from src.codeblocks import parse_codeblocks
-from src.quotes import parse_quotes
-from src.headings import parse_heading
-from src.lists import close_list, is_list_item, parse_list_item
-from src.inline import parse_inline_formatting
+from md_latexier.codeblocks import parse_codeblocks
+from md_latexier.headings import parse_heading
+from md_latexier.inline import parse_inline_formatting
+from md_latexier.lists import close_list, is_list_item, parse_list_item
+from md_latexier.quotes import parse_quotes
 
 
-def md_to_latex(md_text):
+def md_to_latex(md_text: str, ):
     """
     Proccess each line converting them to latex
     """

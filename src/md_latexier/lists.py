@@ -1,6 +1,5 @@
 from re import match, Match
-
-from src.inline import parse_inline_formatting
+from md_latexier.inline import parse_inline_formatting
 
 
 def is_list_item(line: str):
