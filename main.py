@@ -1,7 +1,7 @@
 import sys
 import os
 
-from src.convert import md_to_latex
+from src.converter import md_to_latex
 from templates.default import LATEX_TEMPLATE
 
 def main():
