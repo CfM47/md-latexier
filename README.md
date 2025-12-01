@@ -108,5 +108,6 @@ The generated LaTeX uses the default template, support for custom templates is c
 ## 🤝 If you liked the project...
 
 Pull requests and suggestions are welcome!  
-Open an issue if you want a new Markdown feature supported. If you like this project please give the repository a **star** ⭐ it would be much appreciated.
+Open an issue if you want a new Markdown feature supported. 
+If you like this project please give the repository a **star** ⭐ it would be much appreciated.
 
