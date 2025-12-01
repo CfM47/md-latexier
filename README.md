@@ -54,19 +54,47 @@ print("Hello")
 ### **Customizable Template**
 The generated LaTeX file is embedded into a user-editable template.
 
+## 🚀 Installation
 
-## 📦 Installation
+`md-latexier` can be installed globally using **uv**.
 
-Clone the repository:
+First, clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/markdown-to-latex.git
-cd markdown-to-latex
+git clone https://github.com/YOUR_USERNAME/md-latexier.git
+cd md-latexier
 ```
 
-Ensure you have **Python 3.8+** installed.
+Then install it as a terminal tool:
 
-No external libraries are required.
+```bash
+uv tool install .
+```
+
+You can verify the installation with:
+
+```bash
+md-latexier --help
+```
+
+## 🧭 Usage
+
+Convert any Markdown file into a LaTeX `.tex` document:
+
+```bash
+md-latexier input.md
+```
+
+This will generate `input.tex` in the same directory.
+
+You can also specify a relative or absolute path:
+
+```bash
+md-latexier docs/chapter1.md
+md-latexier /home/user/notes/report.md
+```
+
+The generated LaTeX uses the default template, support for custom templates is comming soon.
 
 ## 🏗️ Cooming soon...
 
@@ -74,6 +102,7 @@ No external libraries are required.
 - Math display blocks (`$$ ... $$`)
 - Table support (`tabularx`)
 - Nested list indentation
+- Support for custom templates
 
 
 ## 🤝 If you liked the project...
